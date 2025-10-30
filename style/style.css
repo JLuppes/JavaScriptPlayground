@@ -46,6 +46,7 @@ body {
 .results {
   max-width: 30em;
   min-width: 10em;
+  text-align: center;
 }
 
 .results th,
