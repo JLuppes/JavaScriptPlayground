@@ -31,7 +31,16 @@ function getFormValues() {
 }
 
 function countTheStuff() {
-  // Your code here
+  let countP = document.querySelectorAll("p").length;
+  let countH2 = document.querySelectorAll("H2").length;
+  let countTD = document.querySelectorAll("TD").length;
+
+  let countPResult = document.getElementById("countOfP");
+  countPResult.innerHTML = countP;
+  let countH2Result = document.getElementById("countOfH2");
+  countH2Result.innerHTML = countH2;
+  let countTDResult = document.getElementById("countOfTD");
+  countTDResult.innerHTML = countTD;
 }
 
 function addNewRow() {
