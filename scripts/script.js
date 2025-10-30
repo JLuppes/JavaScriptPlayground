@@ -46,14 +46,10 @@ function countTheStuff() {
 function addNewRow() {
   const addRowsTable = document.getElementById("addRowsTable");
   const tableBody = addRowsTable.childNodes[1];
-  const lastRow = tableBody.childNodes[tableBody.childNodes.length - 2];
+  const lastRow = tableBody.children[tableBody.children.length - 1];
   const currentCount = lastRow.innerText;
-  console.log("Current count: " + currentCount);
-
-  let rowLength = tableBody.childNodes.length
-  console.log("Row length: " + rowLength)
-  const newRow = tableBody.insertRow(rowLength-2)
-  newRow.innerHTML = `<td>${(parseInt(currentCount)+1)}</td>`
+  const newRow = addRowsTable.insertRow();
+  newRow.innerHTML = `<td>${+currentCount + 1}</td>`;
 }
 
 function yourBonusChallenge() {
