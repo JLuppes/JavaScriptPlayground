@@ -10,7 +10,10 @@ function moveTheThing() {
 }
 
 function styleTheText() {
-  // Your code here
+  let fancyText = document.getElementById("fancyText");
+  fancyText.style.color = "green";
+  fancyText.style.fontFamily = "wingdings";
+  fancyText.style.fontSize = "3em";
 }
 
 function getFormValues() {
