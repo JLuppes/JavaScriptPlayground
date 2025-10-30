@@ -17,7 +17,17 @@ function styleTheText() {
 }
 
 function getFormValues() {
-  // Your code here
+  let firstField = document.getElementById("firstField");
+  let secondField = document.getElementById("secondField");
+  let thirdField = document.getElementById("thirdField");
+
+  let firstResult = document.getElementById("firstResult");
+  let secondResult = document.getElementById("secondResult");
+  let thirdResult = document.getElementById("thirdResult");
+
+  firstResult.textContent = firstField.value;
+  secondResult.textContent = secondField.value;
+  thirdResult.textContent = thirdField.checked;
 }
 
 function countTheStuff() {
