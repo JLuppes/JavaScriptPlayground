@@ -1,13 +1,40 @@
-h1 {
-  color: green;
-}
-
 body {
   display: flex;
   align-items: left;
   flex-direction: column;
   justify-content: center;
   line-height: 3em;
+}
+
+h1 {
+  color: green;
+  align-self: center;
+}
+
+.challengeList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challenge {
+  border-radius: 1em;
+  border-style: solid;
+  max-width: 60%;
+  padding: 2em;
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.challengeTitle {
+  font-size: larger;
+  border: 1px green groove;
+  border-radius: 10em;
+  padding: 1em;
+  margin: 1em;
+  background-color: aqua;
 }
 
 .moveChallenge {
@@ -20,6 +47,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1em;
+  border-radius: 10em;
+  font-family: Roboto, sans-serif;
 }
 
 .box {
