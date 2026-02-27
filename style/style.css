@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   justify-content: center;
   line-height: 3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
@@ -26,11 +27,11 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: lightseagreen;
 }
 
 .challengeTitle {
-  font-size: larger;
-  border: 1px green groove;
+  border: 1px hwb(108 6% 31%) groove;
   border-radius: 10em;
   padding: 1em;
   margin: 1em;
@@ -71,6 +72,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 .results {
@@ -81,13 +83,13 @@ h1 {
 
 .results th,
 .results td {
-  border: black 1px;
-  border-style: double;
+  border: black 0.2em;
+  border-style: ridge;
   max-width: 30em;
   min-width: 10em;
 }
 
 #theThing {
-  min-width: 32px;
-  max-width: 32px;
+  min-width: 2em;
+  max-width: 2em;
 }
